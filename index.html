@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divya - My Heart ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cinematic Gradient Background -->
+<div class="bg"></div>
+
+<!-- Background Music -->
+<audio id="bgMusic" autoplay loop>
+  <source src="romantic_music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+  <!-- Hero Section -->
+  <section id="intro">
+    <h1>Divya ❤️ My Everything</h1>
+    <p>Welcome to an interactive journey of love, care, and surprises! 🌹</p>
+    <img src="animated_character1.png" alt="Animated Character" class="character">
+    <p>Divya, tum meri life ki sabse important hissa ho. Har pal tumhare bina adhoora hai.</p>
+    <p>Mera har din tumhari muskaan se roshan hota hai. Tum meri zindagi ka sabse khubsurat hissa ho.</p>
+    <p>Har gusse ke baad tumhari care aur support mujhe sabse zyada khush karti hai. Tum meri strength ho ❤️</p>
+    <button class="btn" onclick="revealSection('loveSection1')">Start Journey 💖</button>
+  </section>
+
+  <!-- Love Section 1 -->
+  <section id="loveSection1" class="hidden">
+    <h2>💖 Love & Care 💖</h2>
+    <img src="animated_character2.png" class="character">
+    <p>Divya, tum meri zindagi ka sabse beautiful part ho. Tumhare bina sab kuch adhoora lagta hai.</p>
+    <p>Har din tumhare saath hasi aur masti se bhara hota hai. Tum meri best friend bhi ho ❤️</p>
+    <p>Har pal tumhare saath yaadgar hai. Tum meri duniya ho aur main sirf tumhara follower hoon 😘</p>
+    <p>Har problem me tumhari care mujhe sabse zyada khush karti hai. Tum meri happiness ho 💫</p>
+    <button class="btn" onclick="revealSection('loveSection2')">Next 💌</button>
+  </section>
+
+  <!-- Love Section 2 -->
+  <section id="loveSection2" class="hidden">
+    <h2>🌹 Importance in My Life 🌹</h2>
+    <img src="animated_character3.png" class="character">
+    <p>Tum meri life ka sabse important hissa ho. Tumhare bina mai adhura hoon.</p>
+    <p>Meri har success, har khushi tumhare wajah se hai. Tum meri motivation ho 💪</p>
+    <p>Har gusse ke baad tumhari smile meri duniya ko roshan karti hai. Tum meri soulmate ho ❤️</p>
+    <p>Meri har prayer me sirf tumhara naam hota hai. Tum meri life ki ultimate happiness ho 💖</p>
+    <button class="btn" onclick="revealSection('funSection')">Next Surprise 🎉</button>
+  </section>
+
+  <!-- Fun Section -->
+  <section id="funSection" class="hidden">
+    <h2>🎉 Fun & Smiles 🎉</h2>
+    <img src="animated_character4.png" class="character">
+    <p>Divya, tum sirf meri wife nahi ho, tum meri best friend bhi ho.</p>
+    <p>Har din tumhare saath hasi aur masti se bhara hota hai. Tum meri energy ho 🔥</p>
+    <p>Click the heart below to reveal a surprise! ❤️</p>
+    <div id="heart" onclick="heartClicked()">❤️ Tap Me!</div>
+    <div id="surprise" class="hidden">
+      <h3>Surprise! 🥳</h3>
+      <p>Tum meri life ki sabse beautiful gift ho ❤️</p>
+      <p>Har memory tumhare saath priceless hai. Tum meri happiness aur motivation ho 🌈</p>
+      <button class="btn" onclick="revealSection('finalSection')">Final Section 💌</button>
+    </div>
+  </section>
+
+  <!-- Final Section -->
+  <section id="finalSection" class="hidden">
+    <h2>💌 Forever Divya 💌</h2>
+    <img src="animated_character5.png" class="character">
+    <p>Har saal, har din, har moment sirf tumhare liye hai.</p>
+    <p>Meri life ka har important pal tumhare bina adhoora hai.</p>
+    <p>Har future plan me sirf tumhari khushi aur smile ka khayal hai.</p>
+    <p>Tum meri life ka ultimate joy ho. Tum meri everything ho ❤️</p>
+    <button class="btn" onclick="showConfetti()">Celebrate Our Love 🎆</button>
+  </section>
+
+</div>
+
+<!-- Fireworks Canvas -->
+<canvas id="fireworks"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
